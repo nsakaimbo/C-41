@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Ash Furrow. All rights reserved.
 //
 
+// Swift Bridging
+#import "C_41-Swift.h"
+
 // View Controllers
 #import "ASHEditRecipeViewController.h"
 #import "ASHEditStepViewController.h"
@@ -15,7 +18,7 @@
 #import "ASHEditStepViewModel.h"
 
 // Views
-#import "ASHTextFieldCell.h"
+//#import "ASHTextFieldCell.h"
 
 enum {
     ASHEditRecipeViewControllerMetadataSection = 0,
