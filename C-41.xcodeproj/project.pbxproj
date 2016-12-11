@@ -120,6 +120,8 @@
 		5EC0E8611870C2F200289440 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5EC0E8631870D80A00289440 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5EC0E865187109D900289440 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5F03F7531DFDE22300D8A85F /* C-41-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "C-41-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F03F7541DFDE22300D8A85F /* ASHTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASHTextFieldCell.swift; sourceTree = "<group>"; };
 		8EB58A4E145B1300F0FF919B /* Pods-C-41.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-41.debug.xcconfig"; path = "Pods/Target Support Files/Pods-C-41/Pods-C-41.debug.xcconfig"; sourceTree = "<group>"; };
 		B63C3F081458045740C3578C /* libPods-C-41Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-C-41Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D7C5F186814F9002E9D79 /* ASHCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHCoreDataStack.h; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		5E93AD431866695600795C9E /* C-41 */ = {
 			isa = PBXGroup;
 			children = (
+				5F03F7531DFDE22300D8A85F /* C-41-Bridging-Header.h */,
 				5E93AD4C1866695600795C9E /* ASHAppDelegate.h */,
 				5E93AD4D1866695600795C9E /* ASHAppDelegate.m */,
 				C02D7C5F186814F9002E9D79 /* ASHCoreDataStack.h */,
@@ -404,6 +407,7 @@
 				TargetAttributes = {
 					5E93AD371866695600795C9E = {
 						DevelopmentTeam = 4P926H6HV3;
+						LastSwiftMigration = 0810;
 					};
 					5E93AD601866695600795C9E = {
 						TestTargetID = 5E93AD371866695600795C9E;
@@ -658,6 +662,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -691,6 +696,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -702,11 +708,17 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "C-41/C-41-Prefix.pch";
 				INFOPLIST_FILE = "C-41/C-41-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "C-41/C-41-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -718,12 +730,17 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "C-41/C-41-Prefix.pch";
 				INFOPLIST_FILE = "C-41/C-41-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "C-41/C-41-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -733,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11479B2596657ABA83FCA92F /* Pods-C-41Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/C-41.app/C-41";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -758,6 +776,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 537F4FCC04E443E322762BA9 /* Pods-C-41Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/C-41.app/C-41";
 				FRAMEWORK_SEARCH_PATHS = (
