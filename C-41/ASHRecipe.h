@@ -11,7 +11,7 @@
 
 @class ASHStep;
 
-enum ASHRecipeFilmType {
+typedef NS_ENUM(NSUInteger, ASHRecipeFilmType) {
     ASHRecipeFilmTypeColourNegative = 0,
     ASHRecipeFilmTypeColourPositive,
     ASHRecipeFilmTypeBlackAndWhite
