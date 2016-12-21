@@ -12,8 +12,10 @@
 #import "ASHEditRecipeViewController.h"
 
 // View Model
-#import "ASHMasterViewModel.h"
 #import "ASHEditRecipeViewModel.h"
+
+// Swift Bridging
+#import "C_41-Swift.h"
 
 @interface ASHMasterViewController ()
 

@@ -8,7 +8,7 @@
 
 #import "TestHelpers.h"
 
-#import "ASHMasterViewModel.h"
+#import "C_41-Swift.h"
 
 // Private Implementation
 
