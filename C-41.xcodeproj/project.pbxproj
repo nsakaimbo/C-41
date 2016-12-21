@@ -47,6 +47,7 @@
 		5EC0E8621870C2F200289440 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0E8611870C2F200289440 /* QuartzCore.framework */; };
 		5EC0E8641870D80A00289440 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0E8631870D80A00289440 /* AudioToolbox.framework */; };
 		5EC0E866187109D900289440 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0E865187109D900289440 /* Settings.bundle */; };
+		5F0184371E00D96400BCB144 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0184361E00D96400BCB144 /* Then.swift */; };
 		5F03F7551DFDE22300D8A85F /* ASHTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F03F7541DFDE22300D8A85F /* ASHTextFieldCell.swift */; };
 		B0F703029A0B40F8C4C1221E /* libPods-C-41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE53BA40353803FE9A099F4B /* libPods-C-41.a */; };
 		C02D7C61186814F9002E9D79 /* ASHCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C02D7C60186814F9002E9D79 /* ASHCoreDataStack.m */; };
@@ -118,6 +119,7 @@
 		5EC0E8611870C2F200289440 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5EC0E8631870D80A00289440 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5EC0E865187109D900289440 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5F0184361E00D96400BCB144 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		5F03F7531DFDE22300D8A85F /* C-41-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "C-41-Bridging-Header.h"; sourceTree = "<group>"; };
 		5F03F7541DFDE22300D8A85F /* ASHTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASHTextFieldCell.swift; sourceTree = "<group>"; };
 		8EB58A4E145B1300F0FF919B /* Pods-C-41.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-41.debug.xcconfig"; path = "Pods/Target Support Files/Pods-C-41/Pods-C-41.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		5E93AD431866695600795C9E /* C-41 */ = {
 			isa = PBXGroup;
 			children = (
+				5F0184351E00D95300BCB144 /* Utilities */,
 				5F03F7531DFDE22300D8A85F /* C-41-Bridging-Header.h */,
 				5E93AD4C1866695600795C9E /* ASHAppDelegate.h */,
 				5E93AD4D1866695600795C9E /* ASHAppDelegate.m */,
@@ -334,6 +337,14 @@
 				5E93ADAB186FA49100795C9E /* ASHTimerViewModel.m */,
 			);
 			name = "Timer View Controller";
+			sourceTree = "<group>";
+		};
+		5F0184351E00D95300BCB144 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F0184361E00D96400BCB144 /* Then.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		79D9CB6FBEC370254DCBC3BB /* Pods */ = {
@@ -560,6 +571,7 @@
 				5E93ADAC186FA49100795C9E /* ASHTimerViewModel.m in Sources */,
 				C02D7C61186814F9002E9D79 /* ASHCoreDataStack.m in Sources */,
 				5E93AD8C18673FF700795C9E /* ASHEditRecipeViewController.m in Sources */,
+				5F0184371E00D96400BCB144 /* Then.swift in Sources */,
 				5E93AD4E1866695600795C9E /* ASHAppDelegate.m in Sources */,
 				5E93AD7E1866717900795C9E /* ASHRecipe.m in Sources */,
 				5E93AD5A1866695600795C9E /* ASHDetailViewController.m in Sources */,
