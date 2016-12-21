@@ -101,8 +101,6 @@
 		5E93AD8B18673FF600795C9E /* ASHEditRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHEditRecipeViewController.m; sourceTree = "<group>"; };
 		5E93AD8D186742E000795C9E /* ASHEditRecipeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHEditRecipeViewModel.h; sourceTree = "<group>"; };
 		5E93AD8E186742E000795C9E /* ASHEditRecipeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHEditRecipeViewModel.m; sourceTree = "<group>"; };
-		5E93AD931867AB9A00795C9E /* ASHTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHTextFieldCell.h; sourceTree = "<group>"; };
-		5E93AD941867AB9A00795C9E /* ASHTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHTextFieldCell.m; sourceTree = "<group>"; };
 		5E93AD9D186E4A1500795C9E /* ASHEditRecipeViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHEditRecipeViewModelTests.m; sourceTree = "<group>"; };
 		5E93ADA0186F61B900795C9E /* ASHEditStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHEditStepViewController.h; sourceTree = "<group>"; };
 		5E93ADA1186F61B900795C9E /* ASHEditStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHEditStepViewController.m; sourceTree = "<group>"; };
@@ -301,8 +299,6 @@
 				5E93AD8D186742E000795C9E /* ASHEditRecipeViewModel.h */,
 				5E93AD8E186742E000795C9E /* ASHEditRecipeViewModel.m */,
 				5F03F7541DFDE22300D8A85F /* ASHTextFieldCell.swift */,
-				5E93AD931867AB9A00795C9E /* ASHTextFieldCell.h */,
-				5E93AD941867AB9A00795C9E /* ASHTextFieldCell.m */,
 			);
 			name = "Edit Recipe View Controller";
 			sourceTree = "<group>";
