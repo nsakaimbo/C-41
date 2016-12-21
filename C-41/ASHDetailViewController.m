@@ -8,10 +8,12 @@
 
 // View Controllers
 #import "ASHDetailViewController.h"
-#import "ASHTimerViewController.h"
 
 // View Model
 #import "ASHDetailViewModel.h"
+
+// Swift
+#import "C_41-Swift.h"
 
 enum {
     ASHDetailViewControllerInfoSection = 0,
