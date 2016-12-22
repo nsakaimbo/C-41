@@ -10,9 +10,6 @@
 
 #import "ASHCoreDataStack.h"
 
-// View Controllers
-#import "ASHMasterViewController.h"
-
 // Swift
 #import "C_41-Swift.h"
 
