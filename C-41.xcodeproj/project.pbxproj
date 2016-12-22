@@ -18,7 +18,6 @@
 		5E93AD4E1866695600795C9E /* ASHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E93AD4D1866695600795C9E /* ASHAppDelegate.m */; };
 		5E93AD511866695600795C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E93AD4F1866695600795C9E /* Main.storyboard */; };
 		5E93AD541866695600795C9E /* C_41.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E93AD521866695600795C9E /* C_41.xcdatamodeld */; };
-		5E93AD571866695600795C9E /* ASHMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E93AD561866695600795C9E /* ASHMasterViewController.m */; };
 		5E93AD5A1866695600795C9E /* ASHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E93AD591866695600795C9E /* ASHDetailViewController.m */; };
 		5E93AD5C1866695600795C9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E93AD5B1866695600795C9E /* Images.xcassets */; };
 		5E93AD631866695600795C9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E93AD621866695600795C9E /* XCTest.framework */; };
@@ -49,6 +48,7 @@
 		5F2050CE1E0A1C17004B34F7 /* ASHTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2050CD1E0A1C17004B34F7 /* ASHTimerViewController.swift */; };
 		5F2050D01E0A24A1004B34F7 /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2050CF1E0A24A1004B34F7 /* RAC.swift */; };
 		5FFF721C1E004B4F00401EFA /* ASHMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF721B1E004B4F00401EFA /* ASHMasterViewModel.swift */; };
+		5FFF7F411E0C1CF9005CAD57 /* ASHMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF7F401E0C1CF9005CAD57 /* ASHMasterViewController.swift */; };
 		B0F703029A0B40F8C4C1221E /* libPods-C-41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE53BA40353803FE9A099F4B /* libPods-C-41.a */; };
 		C02D7C61186814F9002E9D79 /* ASHCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C02D7C60186814F9002E9D79 /* ASHCoreDataStack.m */; };
 /* End PBXBuildFile section */
@@ -125,6 +125,7 @@
 		5F2050CD1E0A1C17004B34F7 /* ASHTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASHTimerViewController.swift; sourceTree = "<group>"; };
 		5F2050CF1E0A24A1004B34F7 /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
 		5FFF721B1E004B4F00401EFA /* ASHMasterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASHMasterViewModel.swift; sourceTree = "<group>"; };
+		5FFF7F401E0C1CF9005CAD57 /* ASHMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASHMasterViewController.swift; sourceTree = "<group>"; };
 		8EB58A4E145B1300F0FF919B /* Pods-C-41.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-41.debug.xcconfig"; path = "Pods/Target Support Files/Pods-C-41/Pods-C-41.debug.xcconfig"; sourceTree = "<group>"; };
 		B63C3F081458045740C3578C /* libPods-C-41Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-C-41Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D7C5F186814F9002E9D79 /* ASHCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHCoreDataStack.h; sourceTree = "<group>"; };
@@ -291,6 +292,7 @@
 			children = (
 				5E93AD551866695600795C9E /* ASHMasterViewController.h */,
 				5E93AD561866695600795C9E /* ASHMasterViewController.m */,
+				5FFF7F401E0C1CF9005CAD57 /* ASHMasterViewController.swift */,
 				5E93AD81186674CF00795C9E /* ASHMasterViewModel.h */,
 				5E93AD82186674CF00795C9E /* ASHMasterViewModel.m */,
 				5FFF721B1E004B4F00401EFA /* ASHMasterViewModel.swift */,
@@ -570,6 +572,7 @@
 				5E93ADA8186F981D00795C9E /* ASHDetailViewModel.m in Sources */,
 				5E93AD7B1866717800795C9E /* ASHStep.m in Sources */,
 				5E93AD4A1866695600795C9E /* main.m in Sources */,
+				5FFF7F411E0C1CF9005CAD57 /* ASHMasterViewController.swift in Sources */,
 				5E93AD541866695600795C9E /* C_41.xcdatamodeld in Sources */,
 				5E93AD8F186742E000795C9E /* ASHEditRecipeViewModel.m in Sources */,
 				5F03F7551DFDE22300D8A85F /* ASHTextFieldCell.swift in Sources */,
@@ -583,7 +586,6 @@
 				5F2050D01E0A24A1004B34F7 /* RAC.swift in Sources */,
 				5E93AD7E1866717900795C9E /* ASHRecipe.m in Sources */,
 				5E93AD5A1866695600795C9E /* ASHDetailViewController.m in Sources */,
-				5E93AD571866695600795C9E /* ASHMasterViewController.m in Sources */,
 				5E93ADA2186F61B900795C9E /* ASHEditStepViewController.m in Sources */,
 				5E93ADA5186F62A500795C9E /* ASHEditStepViewModel.m in Sources */,
 			);
