@@ -67,6 +67,11 @@
         NSInteger duration = [value integerValue];
         NSInteger minutes = duration / 60;
         NSInteger seconds = duration % 60;
+        
+        if (seconds < 0) {
+            seconds = 0;
+        }
+        
         return [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
     }];
     RAC(self, complete) = [RACSignal combineLatest:@[RACObserve(self, currentStepIndex), RACObserve(self.model, steps)] reduce:^id(NSNumber *currentStepIndexNumber, NSOrderedSet *steps){
