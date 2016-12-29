@@ -10,11 +10,12 @@ import Foundation
 
 // a struct that replaces the RAC macro
 struct RAC  {
-    var target : NSObject!
-    var keyPath : String!
-    var nilValue : AnyObject!
+    weak var target : NSObject!
+    let keyPath : String
+    let nilValue : AnyObject!
     
-    init(_ target: NSObject!, _ keyPath: String, nilValue: AnyObject? = nil) {
+    init(_ target: NSObject, _ keyPath: String, nilValue: AnyObject? = nil) {
+        
         self.target = target
         self.keyPath = keyPath
         self.nilValue = nilValue
@@ -30,6 +31,11 @@ func ~> (_ rac: RAC, _ signal: RACSignal) {
     rac.assignSignal(signal)
 }
 
-func RACObserve(_ target: NSObject!, _ keyPath: String) -> RACSignal  {
+func RACObserve(_ target: Any!, _ keyPath: String) -> RACSignal  {
+    
+    guard let target = target as? NSObject else {
+        fatalError("RACObserve for target failed. Cannot initialize with non-NSObject types.")
+    }
+    
     return target.rac_values(forKeyPath: keyPath, observer: target)
 }
