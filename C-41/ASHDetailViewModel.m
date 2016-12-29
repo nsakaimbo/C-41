@@ -7,11 +7,13 @@
 //
 
 // View Models
-#import "ASHTimerViewModel.h"
 #import "ASHDetailViewModel.h"
 
 #import "ASHRecipe.h"
 #import "ASHStep.h"
+
+// Swift
+#import "C_41-Swift.h"
 
 @interface ASHDetailViewModel ()
 
