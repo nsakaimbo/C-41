@@ -13,7 +13,6 @@
 #import "ASHDetailViewModel.h"
 #import "ASHEditRecipeViewModel.h"
 #import "ASHEditStepViewModel.h"
-#import "ASHTimerViewModel.h"
 
 // Models
 #import "ASHRecipe.h"
